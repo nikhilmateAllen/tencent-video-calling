@@ -137,7 +137,7 @@ class RtcClient {
     await this.unpublish();
 
     // disable stats reporting
-    disableStats()
+    this.disableStats()
 
     // leave the room
     await this.client_.leave();
@@ -215,7 +215,7 @@ class RtcClient {
     });
     this.client_.on('client-banned', err => {
       // disable stats reporting
-      disableStats()
+      this.disableStats()
     
       console.error('client has been banned for ' + err);
       if (!isHidden()) {
