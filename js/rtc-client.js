@@ -44,6 +44,7 @@ class RtcClient {
       this.isJoined_ = true;
 
       // create a local stream with audio/video from microphone/camera
+      console.log('getCameraId(111111)', getCameraId())
       if (getCameraId() && getMicrophoneId()) {
         this.localStream_ = TRTC.createStream({
           audio: true,
