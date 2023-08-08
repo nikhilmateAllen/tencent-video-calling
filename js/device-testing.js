@@ -543,9 +543,7 @@ async function updateCameraDeviceList() {
   if (cacheCameraDevice.length > 0) {
     $('#camera-select').val(localStorage.getItem('txy_webRTC_cameraId'));
     cameraTestingResult.device = cacheCameraDevice[0];
-    console.log('\n\n\nchangeCamera11', cameraId)
-    cameraId = cacheCameraDevice[0]
-    console.log('\n\n\nchangeCamera', cacheCameraDevice[0].deviceId)
+    cameraId = cacheCameraDevice[0].deviceId;
   } else {
     $('#camera-select').val(cameraDevices[0].deviceId);
     cameraTestingResult.device = cameraDevices[0];
