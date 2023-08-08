@@ -51,7 +51,7 @@ function genTestUserSig(userID, SDKAPPID, SECRETKEY) {
    * .com/rav).
    * `SDKAppID` uniquely identifies a Tencent Cloud account.
    */
-  // const SDKAPPID = 20003511;
+  // const SDKAPPID = ;
 
   /**
    * 签名过期时间，建议不要设置的过短
@@ -86,7 +86,7 @@ function genTestUserSig(userID, SDKAPPID, SECRETKEY) {
    * and key to your backend server to prevent key disclosure and traffic stealing.
    * Reference: https://cloud.tencent.com/document/product/647/17275#Server
    */
-  // const SECRETKEY = '3914d963f90c579fd3c92626da8f26c29807c02de8639c590b15b050453f9945';
+  // const SECRETKEY = '';
 
   // a soft reminder to guide developer to configure sdkAppId/secretKey
   if (SDKAPPID === '' || SECRETKEY === '') {
